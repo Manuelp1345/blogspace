@@ -39,7 +39,7 @@ const renderposts = ()=>{
         contentType:"application/json"
     })
     .then(data => {
-            respuesta = data.map(x =>`<div class="post"><img src="avatar.png" alt=""> <p class="name"> ${x.name} </p> <p class="text">${x.post}</p> </div>`).reverse().join("")
+            respuesta = data.map(x =>`<div class="post"><img src="avatar.png" alt=""> <p class="name"> ${x.name} </p> <p class="edit">Editar</p> <p class="delete">Borrar</p> <p class="text">${x.post}</p> </div>`).reverse().join("")
             pub.innerHTML = respuesta
             RenderPost()
             btn.removeAttribute("disabled")
@@ -54,8 +54,8 @@ const refreshposts = ()=>{
         contentType:"application/json"
     })
     .then(data => {
-            respuesta = data.map(x =>`<div class="post"><img src="avatar.png" alt=""> <p class="name"> ${x.name} </p> <p class="text">${x.post}</p> </div>`).reverse().join("")
-            pub.innerHTML = respuesta
+        respuesta = data.map(x =>`<div class="post"><img src="avatar.png" alt=""> <p class="name"> ${x.name} </p> <p class="edit">Editar</p> <p class="delete">Borrar</p> <p class="text">${x.post}</p> </div>`).reverse().join("")
+        pub.innerHTML = respuesta
     })
 }
 window.onload = () =>{

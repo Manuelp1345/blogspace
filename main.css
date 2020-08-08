@@ -11,6 +11,8 @@ html {
     background-color: whitesmoke;
     width: 100%;
     margin: 0 auto;
+    overflow-y: hidden;
+
 }
 .barra{
     width: 100%;
@@ -23,15 +25,14 @@ html {
 }
 .contenido{
     display: flex;
+    height: 92vh;
     clear: both;
-    height: 100vh;
-
 }
 aside{
     background-color: thistle;
-    width: 15.4%;
+    width: 20%;
     padding: 1rem;
-    clear: both;
+    z-index: 1;
 }
 aside h2{
     text-align: center;
@@ -52,7 +53,8 @@ aside img {
 }
 .posts{
     background-color: aliceblue;
-    width: 100%;
+    width: 80%;
+    overflow-y: scroll;
 }
 .posts h2{
     text-align: center;
@@ -164,4 +166,38 @@ form{
     border-radius: 5rem;
     font-size: 3rem;
     text-align: center;
+}
+.delete{
+    font-size: 2rem;
+    padding: 0.7rem;
+    margin: 1rem;
+    clear: both;
+    top: 2rem;
+    left: 70rem;
+    position: absolute;
+    font-weight: bold;
+    background-color: red;
+    border-radius: 10rem;
+    color: white;
+}
+.delete:hover{
+    cursor: pointer;
+    background-color: rgb(156, 0, 0);
+}
+.edit{
+    font-size: 2rem;
+    padding: 0.7rem;
+    margin: 1rem;
+    clear: both;
+    top: 2rem;
+    left: 62.5rem;
+    position: absolute;
+    font-weight: bold;
+    background-color: green;
+    border-radius: 10rem;
+    color: white;
+} 
+.edit:hover{
+    cursor: pointer;
+    background-color: rgb(2, 105, 2);
 }
