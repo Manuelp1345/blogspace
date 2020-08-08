@@ -1,0 +1,167 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%; /** 1rem = 10px **/
+    margin: 0;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+    margin: 0;
+}
+.contenedor{
+    background-color: whitesmoke;
+    width: 100%;
+    margin: 0 auto;
+}
+.barra{
+    width: 100%;
+    background-color: cornflowerblue;
+    padding: 1.5rem;
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.contenido{
+    display: flex;
+    clear: both;
+    height: 100vh;
+
+}
+aside{
+    background-color: thistle;
+    width: 15.4%;
+    padding: 1rem;
+    clear: both;
+}
+aside h2{
+    text-align: center;
+    padding: 1rem;
+    font-size: 3rem;
+    font-weight: bold;
+}
+aside p {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 2rem;
+}
+aside img {
+    vertical-align: top;
+    text-align: center;
+    border-radius:50%;
+    margin-bottom: 1rem;
+}
+.posts{
+    background-color: aliceblue;
+    width: 100%;
+}
+.posts h2{
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    margin: 2rem;
+}
+form{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    align-items: center;
+}
+.msg{
+    border-radius: 5rem 5rem 0 0;
+    text-align: center;
+    font-weight: bold;
+    font-size: 5rem;
+    height: 6rem;
+    width: 73%;
+    max-width: 73%;
+    min-width: 73%;
+    max-height: 10rem;
+    min-height: 6rem;
+}
+.btn-post{
+    width: 73%;
+    border: none;
+    background-color: darkcyan;
+    border-radius: 0 0 5rem 5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    padding: 0.5rem;
+    padding-top: 1rem;
+    transition: all ease-in-out .3s;
+}
+.btn-post:hover{
+    background-color: rgb(3, 114, 114);
+}
+.post{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    background-color: darkcyan;
+    padding: 2rem;
+    border-radius: 9.9rem;
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    overflow: hidden;
+}
+.post img {
+    border-radius: 50%;
+    width: 12%;
+    clear: both;
+    margin-left: 2rem;
+    max-height: 10rem;
+}
+.post .name{
+    font-size: 3rem;
+    padding: 0;
+    margin: 1rem;
+    width: 100%;
+    clear: both;
+    top: 2rem;
+    left: 17rem;
+    position: absolute;
+    font-weight: bold;
+}
+.post .text{
+    font-size: 2rem;
+    padding: 1rem;
+    margin: 1rem;
+    margin-top: 4rem;
+    width: 80%;
+}
+.load{
+    margin: 0 auto;
+    margin-top: 10rem;
+    padding: 1rem;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+}
+.error{
+    width: 100%;
+    transition: all ease-in-out .3s;
+}
+.errorp{
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 2rem;
+    background-color: rgba(220, 20, 60, 0.575);
+    padding: 2rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.nicep{
+    margin: 0 auto;
+    width: 75%;
+    margin-top: 2rem;
+    background-color: rgba(93, 220, 20, 0.575);
+    padding: 2rem;
+    border-radius: 5rem;
+    font-size: 3rem;
+    text-align: center;
+}
